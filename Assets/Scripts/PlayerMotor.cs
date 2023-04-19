@@ -6,16 +6,20 @@ public class PlayerMotor : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
-    private bool isGrounded; //Is the Player on the Ground
-    public float speed = 5f; //Player Speed
-    public float gravity = -25f;//Gravity - Controls Floatyness -   -9.8 is a normal gravity but feels very floaty, not sure if i did something weird.
-    public float jumpHeight = 1f;//Do I have to say it?
+    private bool isGrounded; 
 
     private bool sprinting = false;
     private bool crouching = false;
 
     private bool lerpCrouch = false;
     private float crouchTimer = 1f;
+
+
+    public float speed = 5f; //Player Speed
+    public float sprintSpeed = 8f;
+    public float gravity = -25f;//Gravity - Controls Floatyness -   -9.8 is a normal gravity but feels very floaty, not sure if i did something weird.
+    public float jumpHeight = 1f;//Do I have to say it?
+
 
     //Will Probably make it possible to toggle
     //public bool isCrouchToggle = true;
